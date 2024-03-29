@@ -70,7 +70,7 @@ export class Signatures {
       const start = splitpoints[i];
       const end = splitpoints[i + 1];
 
-      const pagerange = this.inputpagelist.slice(start, end); // .reverse();
+      const pagerange = this.inputpagelist.slice(start, end).reverse(); // .reverse();
       this.signaturepagelists.push(pagerange);
     }
 

@@ -195,14 +195,14 @@ export class Book {
           newPage.drawPage(page, {
             x: page.height,
             y: 0,
-            rotate: degrees(90),
+            rotate: degrees(90+180),
           });
         } else if (rotate90cw) {
           newPage.setSize(page.height, page.width);
           newPage.drawPage(page, {
             x: 0,
             y: page.width,
-            rotate: degrees(-90),
+            rotate: degrees(-90+180),
           });
         } else {
           var e = new Error("??? what sorta' layout you think you're going to get?");
