@@ -3,6 +3,7 @@
   <label for="source_rotation">Style </label>
   <select name="source_rotation" id="source_rotation">
     <option id="none" value="none" selected="selected">no modification</option>
+    <option id="right_to_left" value="right_to_left">no modification but with rigth to left Binding</option>
     <option id="90cw" value="90cw">rotate pages 90° clockwise</option>
     <option id="90ccw" value="90ccw">rotate pages 90° counter clockwise</option>
     <option id="out_binding" value="out_binding">
@@ -13,11 +14,11 @@
     </option>
   </select>
   </br>
-  <label for="Source_Language_Direction">language direction</label>
+<!--  <label for="Source_Language_Direction">language direction</label>
   <select name="Source_Language_Direction" id="Source_Language_Direction">
     <option id="right_to_left" value="right_to_left" selected="selected">right to left</option>
     <option id="left_to_right" value="left_to_right">left to right</option>
-  </select>
+  </select> -->
   <div>
     <div id="none_example" class="row source_rotation_example">
       <img src="/img/noRotationDiagram.png" width="100px" class="float_left" />
@@ -25,6 +26,14 @@
         <br />
         For books that read like a standard novel<br />
         no rotation of pages applied
+      </p>
+    </div>
+    <div id="right_to_left_example" class="hidden source_rotation_example">
+      <img src="/img/noRotationDiagramRTL.jpg" width="100px" class="float_left" />
+      <p>
+        <br />
+        For books that read like a standard novel<br />
+        no rotation of pages applied BUT for right to left languages
       </p>
     </div>
     <div id="90cw_example" class="hidden source_rotation_example">
